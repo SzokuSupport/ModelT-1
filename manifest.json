@@ -47,7 +47,8 @@
        "customsiteinitialdata",
        "customsitestorefront",
        "personalizationsearchsamplesaddon",
-       "customtaskscheduler"
+       "customtaskscheduler",
+       "extendedbackoffice"
    ],
    "storefrontAddons" : [
         {
