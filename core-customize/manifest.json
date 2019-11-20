@@ -147,7 +147,7 @@
     },
     {
       "key":"website.media.https",
-      "value":"<website_media_https_URL>""
+      "value":"<website_media_https_URL>"
     },
     {
       "key":"website.utilities.http",
