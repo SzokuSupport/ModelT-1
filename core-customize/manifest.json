@@ -131,7 +131,7 @@
     },
     {
       "key" : "b2ctelcotmfwebservices.api.base.url",
-      "value" : ""<b2ctelcotmfwebservices_api_base_URL>m"
+      "value" : "<b2ctelcotmfwebservices_api_base_URL>"
     },
     {
       "key":"website.b2ctelco.http",
