@@ -42,8 +42,24 @@
      "assistedservicefacades",
      "assistedservicestorefront",
      "assistedservicecustomerinterestsaddon",
-    "modeltacceleratorservices"
+    "modeltacceleratorservices",
+    "pcmbackofficesamplesaddon",
+    "rulebuilderbackoffice",
+    "couponbackoffice",
+    "droolsruleengineservices",
+    "couponfacades",
+    "couponservices",
+    "promotionenginesamplesaddon",
+    "upilintegrationservices",
+    "upilbackoffice",
+    "cmsoccaddon"
   ],
+   "extensionPacks": [
+       {
+           "name": "hybris-b2ctelco-suite",
+            "version": "1911.0"
+       }
+    ],
   "properties": [
     {
       "key": "impex.import.workers",
@@ -67,27 +83,27 @@
     },
     {
       "key": "mail.from",
-      "value": "testmail9110@gmail.com"
+      "value": "<your_email>"
     },
     {
       "key": "mail.replyto",
-      "value": "testmail9110@gmail.com"
+      "value": "<your_email>"
     },
     {
       "key": "mail.smtp.server",
-      "value": "smtp.gmail.com"
+      "value": "<your_mail_smtp_sever>"
     },
     {
       "key": "mail.smtp.port",
-      "value": "587"
+      "value": "<your_mail_smtp_severt_port>"
     },
     {
       "key": "mail.smtp.user",
-      "value": "testmail9110@gmail.com"
+      "value": "<your_email>"
     },
     {
       "key": "mail.smtp.password",
-      "value": "PWD11111"
+      "value": "<your_password>"
     },
     {
       "key": "mail.smtp.starttls.enable",
@@ -115,31 +131,31 @@
     },
     {
       "key" : "b2ctelcotmfwebservices.api.base.url",
-      "value" : "https://b2ctelco.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value" : ""<b2ctelcotmfwebservices_api_base_URL>m"
     },
     {
       "key":"website.b2ctelco.http",
-      "value":"http://b2ctelco.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value":"<website_b2ctelco_http_URL>"
     },
     {
       "key":"website.b2ctelco.https",
-      "value":"https://b2ctelco.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value":"<website_b2ctelco_https_URL>"
     },
     {
       "key":"website.media.http",
-      "value":"http://media.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value":"<website_media_http_URL>"
     },
     {
       "key":"website.media.https",
-      "value":"https://media.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value":"<website_media_https_URL>""
     },
     {
       "key":"website.utilities.http",
-      "value":"http://utilities.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value":"<website_utilities_http_URL>"
     },
     {
       "key":"website.utilities.https",
-      "value":"https://utilities.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value":"<website_utilities_http_URL>"
     }
   ],
   "storefrontAddons": [
@@ -168,11 +184,26 @@
       "storefront": "yacceleratorstorefront",
       "template": "yacceleratorstorefront"
     },
-	{
-	  "addon": "b2ctelcooccaddon",
+    {
+      "addon": "pcmbackofficesamplesaddon",
+      "storefront": "yacceleratorstorefront",
+      "template": "yacceleratorstorefront"
+    },
+    {
+      "addon": "promotionenginesamplesaddon",
+      "storefront": "yacceleratorstorefront",
+      "template": "yacceleratorstorefront"
+    },
+    {
+      "addon": "b2ctelcooccaddon",
       "storefront": "ycommercewebservices",
       "template": "ycommercewebservices"
-	}
+    },
+    {
+      "addon": "cmsoccaddon",
+      "storefront": "ycommercewebservices",
+      "template": "ycommercewebservices"
+    }
   ],
   "tests": {
     "extensions": [    
@@ -183,7 +214,9 @@
      "mediastore",
      "b2ctelcoaddon",
      "b2ctelcotmfwebservices",
-     "b2ctelcowebservices"
+     "b2ctelcowebservices",
+     "upilbackoffice",
+     "upilintegrationservices"
     ],
     "annotations": [
       "UnitTests",
@@ -195,6 +228,8 @@
   },
   "webTests": {
     "extensions": [
+      "b2ctelcowebservices",
+      "b2ctelcooccaddon",
       "b2ctelcowebservices"
     ],
     "excludedPackages": [
@@ -249,7 +284,7 @@
         },
         {
           "name": "yacceleratorstorefront",
-          "contextPath": ""
+          "contextPath": "/yacceleratorstorefront"
         },
         {
           "name": "b2ctelcowebservices",
