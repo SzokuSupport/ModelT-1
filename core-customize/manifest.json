@@ -42,22 +42,13 @@
      "assistedservicefacades",
      "assistedservicestorefront",
      "assistedservicecustomerinterestsaddon",
-    "modeltacceleratorservices",
-    "pcmbackofficesamplesaddon",
-    "rulebuilderbackoffice",
-    "couponbackoffice",
-    "droolsruleengineservices",
-    "couponfacades",
-    "couponservices",
-    "promotionenginesamplesaddon",
-    "upilintegrationservices",
-    "upilbackoffice",
-    "cmsoccaddon"
+    "modeltacceleratorservices"
   ],
-   "extensionPacks": [
+
+  "extensionPacks": [
        {
            "name": "hybris-b2ctelco-suite",
-            "version": "1911.0"
+            "version": "1907.0"
        }
     ],
   "properties": [
@@ -184,26 +175,11 @@
       "storefront": "yacceleratorstorefront",
       "template": "yacceleratorstorefront"
     },
-    {
-      "addon": "pcmbackofficesamplesaddon",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
-    },
-    {
-      "addon": "promotionenginesamplesaddon",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
-    },
-    {
-      "addon": "b2ctelcooccaddon",
+	{
+	  "addon": "b2ctelcooccaddon",
       "storefront": "ycommercewebservices",
       "template": "ycommercewebservices"
-    },
-    {
-      "addon": "cmsoccaddon",
-      "storefront": "ycommercewebservices",
-      "template": "ycommercewebservices"
-    }
+	}
   ],
   "tests": {
     "extensions": [    
@@ -214,9 +190,7 @@
      "mediastore",
      "b2ctelcoaddon",
      "b2ctelcotmfwebservices",
-     "b2ctelcowebservices",
-     "upilbackoffice",
-     "upilintegrationservices"
+     "b2ctelcowebservices"
     ],
     "annotations": [
       "UnitTests",
@@ -228,8 +202,6 @@
   },
   "webTests": {
     "extensions": [
-      "b2ctelcowebservices",
-      "b2ctelcooccaddon",
       "b2ctelcowebservices"
     ],
     "excludedPackages": [
@@ -273,7 +245,8 @@
           "value": "false"
         },
         {
-          "key":"storefrontContextRoot",
+          
+"key":"storefrontContextRoot",
           "value":"/yacceleratorstorefront"
         }
       ],
@@ -284,7 +257,7 @@
         },
         {
           "name": "yacceleratorstorefront",
-          "contextPath": "/yacceleratorstorefront"
+          "contextPath": ""
         },
         {
           "name": "b2ctelcowebservices",
