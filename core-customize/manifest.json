@@ -174,12 +174,7 @@
       "addon": "customerticketingaddon",
       "storefront": "yacceleratorstorefront",
       "template": "yacceleratorstorefront"
-    },
-	{
-	  "addon": "b2ctelcooccaddon",
-      "storefront": "ycommercewebservices",
-      "template": "ycommercewebservices"
-	}
+    }
   ],
   "tests": {
     "extensions": [    
