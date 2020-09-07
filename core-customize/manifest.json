@@ -1,6 +1,5 @@
 {
-"commerceSuiteVersion": "1905",
-"useCloudExtensionPack": true,
+  "commerceSuiteVersion": "1811.4",
   "extensions": [
      "acceleratorcms",
      "adaptivesearchbackoffice",
@@ -11,7 +10,6 @@
      "utilitiesstore",
      "mediastore",
      "b2ctelcoaddon",
-     "b2ctelcooccaddon",
      "b2ctelcotmfwebservices",
      "b2ctelcowebservices",
      "commerceservicesbackoffice",
@@ -46,6 +44,13 @@
     "modeltacceleratorservices"
 	"librarytest"
   ],
+
+  "extensionPacks": [
+       {
+           "name": "hybris-b2ctelco-suite",
+            "version": "1903.0"
+       }
+    ],
   "properties": [
     {
       "key": "impex.import.workers",
@@ -69,27 +74,27 @@
     },
     {
       "key": "mail.from",
-      "value": "testmail9110@gmail.com"
+      "value": "<your_email>"
     },
     {
       "key": "mail.replyto",
-      "value": "testmail9110@gmail.com"
+      "value": "<your_email>"
     },
     {
       "key": "mail.smtp.server",
-      "value": "smtp.gmail.com"
+      "value": "<your_mail_smtp_sever>"
     },
     {
       "key": "mail.smtp.port",
-      "value": "587"
+      "value": "<your_mail_smtp_severt_port>"
     },
     {
       "key": "mail.smtp.user",
-      "value": "testmail9110@gmail.com"
+      "value": "<your_email>"
     },
     {
       "key": "mail.smtp.password",
-      "value": "PWD11111"
+      "value": "<your_password>"
     },
     {
       "key": "mail.smtp.starttls.enable",
@@ -117,31 +122,31 @@
     },
     {
       "key" : "b2ctelcotmfwebservices.api.base.url",
-      "value" : "https://b2ctelco.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value" : "<b2ctelcotmfwebservices_api_base_URL>"
     },
     {
       "key":"website.b2ctelco.http",
-      "value":"http://b2ctelco.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value":"<website_b2ctelco_http_URL>"
     },
     {
       "key":"website.b2ctelco.https",
-      "value":"https://b2ctelco.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value":"<website_b2ctelco_https_URL>"
     },
     {
       "key":"website.media.http",
-      "value":"http://media.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value":"<website_media_http_URL>"
     },
     {
       "key":"website.media.https",
-      "value":"https://media.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value":"<website_media_https_URL>"
     },
     {
       "key":"website.utilities.http",
-      "value":"http://utilities.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value":"<website_utilities_http_URL>"
     },
     {
       "key":"website.utilities.https",
-      "value":"https://utilities.cy8u-telcoacce1-s1-public.model-t.cc.commerce.ondemand.com"
+      "value":"<website_utilities_http_URL>"
     }
   ],
   "storefrontAddons": [
@@ -169,12 +174,7 @@
       "addon": "customerticketingaddon",
       "storefront": "yacceleratorstorefront",
       "template": "yacceleratorstorefront"
-    },
-	{
-	  "addon": "b2ctelcooccaddon",
-      "storefront": "ycommercewebservices",
-      "template": "ycommercewebservices"
-	}
+    }
   ],
   "tests": {
     "extensions": [    
@@ -240,7 +240,8 @@
           "value": "false"
         },
         {
-          "key":"storefrontContextRoot",
+          
+"key":"storefrontContextRoot",
           "value":"/yacceleratorstorefront"
         }
       ],
