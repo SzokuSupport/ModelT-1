@@ -1,0 +1,11 @@
+#Ant properties
+#Fri Jul 17 13:59:14 UTC 2020
+version.api=1905
+vendor=hybris
+group.id=de.hybris.platform
+name=cmscockpit
+description=cmscockpit
+builddate=20200717 1358
+releasedate=20200714 1437
+version=1905.2004.1
+module.name=platform-module

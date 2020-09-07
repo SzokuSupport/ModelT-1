@@ -40,7 +40,8 @@
        "pcmbackofficesamplesaddon",
        "yacceleratorstorefront",
        "personalizationsearchsamplesaddon",
-       "entryNumberFix"
+       "entryNumberFix",
+	   "cmscockpit"
    ],
    "storefrontAddons" : [
         {
