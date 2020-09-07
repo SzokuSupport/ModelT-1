@@ -1,0 +1,9 @@
+[ {
+  "basePath" : "/psMonitoring",
+  "mainTabLabel" : "PS Monitoring",
+  "subTabs" : [ {
+    "path" : "/psPerformance",
+    "label" : "PS Performance",
+    "skipPrefix" : false
+  }]
+} ]
